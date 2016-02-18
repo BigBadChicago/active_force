@@ -1,13 +1,50 @@
 module StandardTypes
   STANDARD_TYPES = %w[ 
+    AcceptedEventRelation
     Account
+    AccountContactRole
+    AccountFeed
+    AccountHistory
+    AccountOwnerSharingRule
+    AccountPartner
+    AccountShare
+    AccountTag
+    AccountTeamMember
+    AccountTerritoryAssignmentRule
+    AccountTerritoryAssignmentRuleItem
+    AccountTerritorySharingRule
+    ActionLinkGroupTemplate
+    ActionLinkTemplate
+    ActivityHistory
+    AdditionalNumber
+    AgentWork
+    AllowedEmailDomain
+    ApexClass
+    ApexComponent
+    ApexLog
+    ApexPage
+    ApexTestQueueItem
+    ApexTestResult
+    ApexTestSuite
+    ApexTrigger
+    Approval
+    Article Type__DataCategorySelection
+    Article Type__Feed
     Asset
     AssetFeed
+    AssetOwnerSharingRule
+    AssetShare
     AssetTag
     AssignmentRule
     AsyncApexJob
     AttachedContentDocument
+    AttachedContentNote
     Attachment
+    AuraDefinition
+    AuraDefinitionBundle
+    AuthConfig
+    AuthConfigProviders
+    AuthProvider
     AuthSession
     Bookmark
     BrandTemplate
@@ -19,7 +56,6 @@ module StandardTypes
     CampaignMember
     CampaignMemberStatus
     CampaignOwnerSharingRule
-    Campaign
     CampaignShare
     CampaignTag
     Case
@@ -32,7 +68,6 @@ module StandardTypes
     CaseOwnerSharingRule
     CaseShare
     CaseSolution
-    Solution
     CaseStatus
     CaseTag
     CaseTeamMember
@@ -46,7 +81,6 @@ module StandardTypes
     ChatterActivity
     ChatterAnswersActivity
     ChatterAnswersReputationLevel
-    ChatterAnswersReputationLevel
     ChatterConversation
     ChatterConversationMember
     ChatterMessage
@@ -54,9 +88,11 @@ module StandardTypes
     CollaborationGroupFeed
     CollaborationGroupMember
     CollaborationGroupMemberRequest
+    CollaborationGroupRecord
     CollaborationInvitation
     CombinedAttachment
-    Community
+    Community (Zone)
+    ConnectedApplication
     Contact
     ContactFeed
     ContactHistory
@@ -67,6 +103,12 @@ module StandardTypes
     ContentDocumentFeed
     ContentDocumentHistory
     ContentDocumentLink
+    ContentFolder
+    ContentFolderLink
+    ContentFolderMember
+    ContentHubItem
+    ContentHubRepository
+    ContentNote
     ContentVersion
     ContentVersionHistory
     ContentWorkspace
@@ -84,7 +126,10 @@ module StandardTypes
     CurrencyType
     CustomBrand
     CustomBrandAsset
+    Custom Metadata Type__mdt
+    Custom Object__Feed
     CustomPermission
+    CustomPermissionDependency
     DandBCompany
     Dashboard
     DashboardComponent
@@ -98,12 +143,17 @@ module StandardTypes
     DatacloudPurchaseUsage
     DatacloudSocialHandle
     DatedConversionRate
+    DcSocialProfile
+    DcSocialProfileHandle
     DeclinedEventRelation
     Division
     DivisionLocalization
     Document
     DocumentAttachmentMap
     DocumentTag
+    DuplicateRecordItem
+    DuplicateRecordSet
+    EmailDomainKey
     EmailMessage
     EmailServicesAddress
     EmailServicesFunction
@@ -122,9 +172,9 @@ module StandardTypes
     EventRelation
     EventTag
     EventWhoRelation
-    EventRelation
     ExternalDataSource
     ExternalDataUserAuth
+    FeedAttachment
     FeedComment
     FeedItem
     FeedLike
@@ -134,12 +184,21 @@ module StandardTypes
     FeedTrackedChange
     FieldPermissions
     FiscalYearSettings
+    FlexQueueItem
+    FlowInterview
     Folder
     ForecastingAdjustment
     ForecastingFact
     ForecastingItem
+    ForecastingOwnerAdjustment
     ForecastingQuota
+    ForecastingType
     ForecastShare
+    Goal
+    GoalFeed
+    GoalHistory
+    GoalLink
+    GoalShare
     Group
     GroupMember
     HashtagDefinition
@@ -162,19 +221,59 @@ module StandardTypes
     LeadTag
     LimitAllocationPerApp
     LineitemOverride
+    ListView
+    ListViewChart
+    ListViewChartInstance
+    LiveAgentSession
+    LiveAgentSessionHistory
+    LiveAgentSessionOwnerSharingRule
+    LiveAgentSessionShare
+    LiveChatBlockingRule
+    LiveChatButton
+    LiveChatButtonDeployment
+    LiveChatButtonSkill
+    LiveChatDeployment
+    LiveChatSensitiveDataRule
+    LiveChatTranscript
+    LiveChatTranscriptEvent
+    LiveChatTranscriptHistory
+    LiveChatTranscriptOwnerSharingRule
+    LiveChatTranscriptShare
+    LiveChatTranscriptSkill
+    LiveChatUserConfig
+    LiveChatUserConfigProfile
+    LiveChatUserConfigUser
+    LiveChatVisitor
     LoginHistory
+    LookedUpFromActivity
+    MacroInstruction
     MailmergeTemplate
+    MatchingRule
+    MatchingRuleItem
+    Metric
+    MetricDataLink
+    MetricDataLinkHistory
+    MetricFeed
+    MetricHistory
+    MetricShare
     MilestoneType
     Name
+    NamedCredential
+    NavigationLinkSet
+    NavigationMenuItem
+    NavigationMenuItemLocalization
     Network
     NetworkActivityAudit
     NetworkMember
     NetworkMemberGroup
     NetworkModeration
+    NetworkPageOverride
+    NetworkSelfRegistration
     NewsFeed
     Note
     NoteAndAttachment
     NoteTag
+    OauthToken
     ObjectPermissions
     ObjectTerritory2AssignmentRule
     ObjectTerritory2AssignmentRuleItem
@@ -197,6 +296,12 @@ module StandardTypes
     OpportunityStage
     OpportunityTag
     OpportunityTeamMember
+    Order
+    OrderFeed
+    OrderHistory
+    OrderItem
+    OrderItemFeed
+    OrderItemHistory
     Organization
     OrgWideEmailAddress
     OwnedContentDocument
@@ -204,10 +309,12 @@ module StandardTypes
     Partner
     PartnerNetworkConnection
     PartnerNetworkRecordConnection
+    PartnerNetworkSyncLog
     PartnerRole
     Period
     PermissionSet
     PermissionSetAssignment
+    PlatformAction
     Pricebook2
     Pricebook2History
     PricebookEntry
@@ -224,11 +331,13 @@ module StandardTypes
     Profile
     ProfileSkill
     ProfileSkillEndorsement
+    ProfileSkillEndorsementFeed
     ProfileSkillEndorsementHistory
     ProfileSkillFeed
     ProfileSkillHistory
     ProfileSkillShare
     ProfileSkillUser
+    ProfileSkillUserFeed
     ProfileSkillUserHistory
     PushTopic
     QuantityForecast
@@ -249,9 +358,16 @@ module StandardTypes
     Report
     ReportFeed
     ReportTag
+    ReputationLevel
+    ReputationLevelLocalization
+    ReputationPointsRule
     RevenueForecast
     RevenueForecastHistory
     RuleTerritory2Association
+    SamlSsoConfig
+    SearchPromotionRule
+    SecureAgent
+    SecureAgentsCluster
     Scontrol
     ScontrolLocalization
     SelfServiceUser
@@ -280,18 +396,24 @@ module StandardTypes
     TaskStatus
     TaskTag
     TaskWhoRelation
-    TaskRelation
     Territory
     Territory2
     Territory2Model
     Territory2ModelHistory
     Territory2Type
+    TestSuiteMembership
+    ThirdPartyAccountLink
     Topic
     TopicAssignment
     TopicFeed
+    TopicLocalization
+    TwoFactorInfo
     UndecidedEventRelation
     User
     UserAccountTeamMember
+    UserAppMenuCustomization
+    UserAppMenuCustomizationShare
+    UserAppMenuItem
     UserConfigTransferButton
     UserConfigTransferSkill
     UserFeed
@@ -302,12 +424,21 @@ module StandardTypes
     UserPreference
     UserProfile
     UserProfileFeed
+    UserProvAccount
+    UserProvAccountStaging
+    UserProvMockTarget
+    UserProvisioningConfig
+    UserProvisioningLog
+    UserProvisioningRequest
+    UserProvisioningRequestOwnerSharingRule
+    UserProvisioningRequestShare
     UserRecordAccess
     UserRole
     UserShare
     UserTeamMember
     UserTerritory
     UserTerritory2Association
+    VerificationHistory
     Vote
     WebLink
     WebLinkLocalization
@@ -322,12 +453,15 @@ module StandardTypes
     WorkCoachingHistory
     WorkCoachingShare
     WorkFeedback
+    WorkFeedbackHistory
     WorkFeedbackQuestion
     WorkFeedbackQuestionHistory
     WorkFeedbackQuestionSet
+    WorkFeedbackQuestionSetHistory
     WorkFeedbackQuestionSetShare
     WorkFeedbackQuestionShare
     WorkFeedbackRequest
+    WorkFeedbackRequestFeed
     WorkFeedbackRequestHistory
     WorkFeedbackRequestShare
     WorkFeedbackShare
@@ -338,6 +472,8 @@ module StandardTypes
     WorkGoalHistory
     WorkGoalLink
     WorkGoalShare
+    WorkOrder
+    WorkOrderLineItem
     WorkPerformanceCycle
     WorkPerformanceCycleFeed
     WorkPerformanceCycleHistory
@@ -352,6 +488,6 @@ module StandardTypes
     WorkRewardHistory
     WorkRewardShare
     WorkThanks
-    WorkThanksShare 
+    WorkThanksShare
   ]
 end
